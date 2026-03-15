@@ -1,0 +1,53 @@
+.Docs {
+  padding: 94px 1.25rem 3.5rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.Docs__hero {
+  text-align: center;
+  padding: 2.75rem 1.25rem;
+  border-radius: 18px;
+  background: linear-gradient(132deg, rgba(22, 28, 46, 0.94), rgba(7, 15, 32, 0.7));
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.22);
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 2.75rem;
+}
+
+.Docs__hero h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+.Docs__hero p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Docs__section {
+  background: white;
+  border-radius: 18px;
+  padding: 1.9rem 1.75rem;
+  margin-bottom: 1.75rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.06);
+}
+
+.Docs__section h2 {
+  margin-top: 0;
+}
+
+.Docs__section ul,
+.Docs__section ol {
+  margin: 0.9rem 0 0 1.35rem;
+}
+
+.Docs__footer {
+  text-align: center;
+  padding-top: 1.6rem;
+  color: rgba(15, 23, 42, 0.65);
+}

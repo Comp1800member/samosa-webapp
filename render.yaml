@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: samosa-webapp
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    pullRequestPreviewsEnabled: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"

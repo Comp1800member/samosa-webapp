@@ -1,0 +1,46 @@
+.FeatureCard {
+  background: white;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 1.4rem 1.5rem;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.FeatureCard:focus-visible,
+.FeatureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 68px rgba(15, 23, 42, 0.14);
+  border-color: rgba(15, 23, 42, 0.15);
+  outline: none;
+}
+
+.FeatureCard__icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(16, 185, 129, 0.12);
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+}
+
+.FeatureCard__title {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.FeatureCard__description {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.75);
+  flex: 1;
+}
+
+.FeatureCard__cta {
+  margin-top: auto;
+}

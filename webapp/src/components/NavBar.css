@@ -1,0 +1,86 @@
+.NavBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.64);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.NavBar__inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavBar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #0f172a;
+  font-size: 1.1rem;
+  transition: transform 160ms ease, color 160ms ease;
+}
+
+.NavBar__brand:hover {
+  transform: translateY(-1px);
+  color: #0b3d91;
+}
+
+.NavBar__logo {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.NavBar__links {
+  display: flex;
+  gap: 1.35rem;
+}
+
+.NavBar__link {
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  color: rgba(15, 23, 42, 0.8);
+  padding: 0.35rem 0;
+  transition: color 160ms ease;
+}
+
+.NavBar__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: transparent;
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.NavBar__link:hover {
+  color: #0b3d91;
+}
+
+.NavBar__link:hover::after {
+  transform: scaleX(1);
+  background: rgba(11, 61, 145, 0.8);
+}
+
+.NavBar__link--active {
+  color: #0b3d91;
+}
+
+.NavBar__link--active::after {
+  transform: scaleX(1);
+  background: rgba(11, 61, 145, 0.9);
+}

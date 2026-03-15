@@ -1,0 +1,52 @@
+.Setup {
+  padding: 94px 1.25rem 3.5rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.Setup__hero {
+  text-align: center;
+  padding: 2.7rem 1.3rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(12, 15, 55, 0.94), rgba(7, 12, 30, 0.75));
+  box-shadow: 0 22px 52px rgba(15, 23, 42, 0.22);
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 2.6rem;
+}
+
+.Setup__hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.1rem, 4vw, 3rem);
+}
+
+.Setup__hero p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Setup__section {
+  background: white;
+  border-radius: 18px;
+  padding: 1.9rem 1.6rem;
+  margin-bottom: 1.75rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.06);
+}
+
+.Setup__section pre.Setup__code {
+  padding: 1rem 1.1rem;
+  background: rgba(15, 23, 42, 0.04);
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.Setup__footer {
+  text-align: center;
+  padding-top: 1.65rem;
+  color: rgba(15, 23, 42, 0.65);
+}

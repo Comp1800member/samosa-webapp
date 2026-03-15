@@ -1,0 +1,15 @@
+/* App-level styles are kept minimal; most layout is handled in the page components. */
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
