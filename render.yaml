@@ -3,8 +3,9 @@ services:
     name: samosa-webapp
     runtime: node
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
+    # App lives in the webapp/ subfolder
+    buildCommand: cd webapp && npm install
+    startCommand: cd webapp && npm start
     pullRequestPreviewsEnabled: true
     envVars:
       - key: NODE_VERSION
