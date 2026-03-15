@@ -1,12 +1,7 @@
 services:
   - type: web
     name: samosa-webapp
-    runtime: node
-    plan: free
-    # App lives in the webapp/ subfolder
-    buildCommand: cd webapp && npm install
-    startCommand: cd webapp && npm start
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
     pullRequestPreviewsEnabled: true
-    envVars:
-      - key: NODE_VERSION
-        value: "20"
